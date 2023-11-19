@@ -26,4 +26,4 @@ jobs:
         
 
       - name: publish release to sonatype repository
-        run: ./gradlew publishReleasePublicationToSonatypeRepository 
+        run: ./gradlew -DSIGNING_KEY_ID={{ secrets.keyId }} -DSIGNING_PASSWORD={{ secrets.keypassword }} -DOSSRH_USERNAME={{ secrets.ossrhUsername }} -DOSSRH_PASSWORD={{ secrets.ossrhPassword }} -DSONATYPE_STAGING_PROFILE_ID={{ secrets.sonatypeProfileId }} publishReleasePublicationToSonatypeRepository
