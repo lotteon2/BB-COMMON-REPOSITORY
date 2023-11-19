@@ -1,7 +1,7 @@
 ext {
     PUBLISH_GROUP_ID = 'io.github.lotteon-maven'
     PUBLISH_VERSION = '0.1.0-alpha1'
-    PUBLISH_ARTIFACT_ID = 'nowgnas'
+    PUBLISH_ARTIFACT_ID = 'blooming-blooms-utils'
     PUBLISH_DESCRIPTION = 'common repository for blooming blooms project'
     PUBLISH_URL = 'https://github.com/lotteon2/BB-COMMON-REPOSITORY'
     PUBLISH_LICENSE_NAME = 'GNU License'
