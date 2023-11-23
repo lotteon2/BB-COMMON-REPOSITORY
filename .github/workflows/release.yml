@@ -13,8 +13,13 @@ on:
     branches: [ main ]
 jobs:
   publish:
+    name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Set up Java
-        run: curl -X POST "https://${{ secrets.JENKINS_USER }}:${{ secrets.maven }}@http://34.64.222.98:8080/job/bb-maven/build?token=${{ secrets.token }}"
+    - name: trigger single Job
+      uses: appleboy/jenkins-action@master
+      with:
+        url: "http://34.64.222.98:8080/"
+        user: "nowgnas"
+        token: ${{ secrets.token }}
+        job: "bb-maven"
