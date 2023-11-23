@@ -17,4 +17,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up Java
-        run: curl -X POST "https://$ {{ secrets.JENKINS_USER }}:${{ secrets.maven }}@http://34.64.222.98:8080/job/bb-maven/build?token=${{ secrets.token }}"
+        run: curl -X POST "https://${{ secrets.JENKINS_USER }}:${{ secrets.maven }}@http://34.64.222.98:8080/job/bb-maven/build?token=${{ secrets.token }}"
