@@ -1,15 +1,12 @@
 package bloomingblooms.errors;
 
-import javax.servlet.http.HttpServletResponse;
+public class EntityNotFoundException extends BaseException {
 
-public class EntityNotFoundException extends DomainException {
+    public EntityNotFoundException() {
+        super(ErrorCode.COMMON_INVALID_PARAMETER);
+    }
 
-  public EntityNotFoundException(String message) {
-    super(message);
-  }
-
-  @Override
-  public int getStatusCode() {
-    return HttpServletResponse.SC_NOT_FOUND;
-  }
+    public EntityNotFoundException(String message) {
+        super(message, ErrorCode.COMMON_INVALID_PARAMETER);
+    }
 }

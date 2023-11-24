@@ -1,20 +1,8 @@
 package bloomingblooms.errors;
 
-import java.util.HashMap;
-import java.util.Map;
-import lombok.Getter;
+public class DomainException extends BaseException {
 
-@Getter
-public abstract class DomainException extends RuntimeException {
-  private final Map<String, String> validation = new HashMap<>();
-
-  public DomainException(String message) {
-    super(message);
-  }
-
-  public abstract int getStatusCode();
-
-  public void addValidation(String fieldName, String errorMessage) {
-    validation.put(fieldName, errorMessage);
+  public DomainException(String service, ErrorCode errorCode) {
+    super(String.format("%s service is not available", service), errorCode);
   }
 }
