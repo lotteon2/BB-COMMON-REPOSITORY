@@ -6,7 +6,6 @@ buildscript {
 
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.7.17'
 }
 
 apply plugin: 'io.github.gradle-nexus.publish-plugin'
@@ -31,8 +30,6 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.28'
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.15.2'
-    // https://mvnrepository.com/artifact/javax.servlet/servlet-api
-    compileOnly group: 'javax.servlet', name: 'servlet-api', version: '2.5'
 }
 
 test {
