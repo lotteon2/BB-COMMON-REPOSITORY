@@ -2,7 +2,7 @@ package bloomingblooms.errors;
 
 public class DomainException extends BaseException {
 
-  public DomainException(String service, ErrorCode errorCode) {
-    super(String.format("%s service is not available", service), errorCode);
+  public DomainException(String service) {
+    super(String.format("%s service is not available", service), ErrorCode.SERVICE_NOT_AVAILABLE);
   }
 }
