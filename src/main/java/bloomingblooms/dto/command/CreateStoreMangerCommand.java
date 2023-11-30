@@ -1,4 +1,4 @@
-package bloomingblooms.message;
+package bloomingblooms.dto.command;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class CreateStoreMangerMessage {
+public class CreateStoreMangerCommand {
   private String email;
   private String businessNumberImage;
   private String name;
