@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-public class ResaleNotification {
+public class ResaleNotificationData {
   private Long userId;
   private String phoneNumber;
   private String userName;
