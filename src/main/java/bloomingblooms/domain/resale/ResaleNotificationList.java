@@ -13,4 +13,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ResaleNotificationList {
   private List<ResaleNotificationData> resaleNotificationData;
+  private String message;
 }
