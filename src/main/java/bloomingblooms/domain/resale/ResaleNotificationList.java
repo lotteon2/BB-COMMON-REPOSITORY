@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class ResaleNotificationList {
   private List<ResaleNotificationData> resaleNotificationData;
   private String message;
