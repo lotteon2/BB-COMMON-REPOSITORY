@@ -1,6 +1,5 @@
 package bloomingblooms.domain.resale;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import java.util.List;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -15,4 +14,5 @@ import lombok.NoArgsConstructor;
 public class ResaleNotificationList {
   private List<ResaleNotificationData> resaleNotificationData;
   private String message;
+  private String productId;
 }
