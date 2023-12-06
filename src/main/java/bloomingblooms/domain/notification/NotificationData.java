@@ -1,5 +1,6 @@
 package bloomingblooms.domain.notification;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,9 +11,10 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class NotificationData<T> {
-  @JsonProperty private T whoToNotify;
-  @JsonProperty private String message;
+  private T whoToNotify;
+  private String message;
 
   public static <T> NotificationData<T> notifyData(T data, String message) {
     return NotificationData.<T>builder().whoToNotify(data).message(message).build();

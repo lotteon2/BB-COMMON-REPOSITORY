@@ -1,6 +1,6 @@
 package bloomingblooms.domain.resale;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import java.util.List;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -12,7 +12,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class ResaleNotificationList {
-  @JsonProperty private List<ResaleNotificationData> resaleNotificationData;
-  @JsonProperty private String message;
+  private List<ResaleNotificationData> resaleNotificationData;
+  private String message;
 }
