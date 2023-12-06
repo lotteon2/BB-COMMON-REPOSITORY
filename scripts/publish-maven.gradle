@@ -17,7 +17,7 @@ artifacts {
 
 
 group = PUBLISH_GROUP_ID
-version = (int)(((new Date().getTime()/1000) - 1451606400) / 10)
+version = PUBLISH_VERSION
 
 ext["signing.keyId"] = ''
 ext["signing.password"] = ''
