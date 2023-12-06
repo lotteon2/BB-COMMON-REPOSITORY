@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 public class ResaleNotificationList {
-  @JsonProperty
-  private List<ResaleNotificationData> resaleNotificationData;
-  private String message;
+  @JsonProperty private List<ResaleNotificationData> resaleNotificationData;
+  @JsonProperty private String message;
 }

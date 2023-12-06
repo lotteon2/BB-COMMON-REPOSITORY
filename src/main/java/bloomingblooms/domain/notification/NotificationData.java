@@ -11,9 +11,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class NotificationData<T> {
-  @JsonProperty
-  private T whoToNotify;
-  private String message;
+  @JsonProperty private T whoToNotify;
+  @JsonProperty private String message;
 
   public static <T> NotificationData<T> notifyData(T data, String message) {
     return NotificationData.<T>builder().whoToNotify(data).message(message).build();
