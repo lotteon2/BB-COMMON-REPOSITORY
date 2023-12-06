@@ -1,6 +1,6 @@
 ext {
     PUBLISH_GROUP_ID = 'io.github.lotteon-maven'
-    PUBLISH_VERSION = "0." + new Date().format("dd") + "." + new Date().format("mm") + "." + new Date().format("yy")
+    PUBLISH_VERSION = (((new Date().getTime() / 1000) - 1451606400) / 10000) + "." + new Date().format("yy.mm")
     PUBLISH_ARTIFACT_ID = 'blooming-blooms-utils'
     PUBLISH_DESCRIPTION = 'common repository for blooming blooms project'
     PUBLISH_URL = 'https://github.com/lotteon2/BB-COMMON-REPOSITORY'
