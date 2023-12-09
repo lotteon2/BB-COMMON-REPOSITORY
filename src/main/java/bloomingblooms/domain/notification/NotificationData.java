@@ -12,9 +12,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class NotificationData<T> {
   @JsonProperty private T whoToNotify;
-  private String message;
+  private PublishNotificationInformation message;
 
-  public static <T> NotificationData<T> notifyData(T data, String message) {
+  public static <T> NotificationData<T> notifyData(T data, PublishNotificationInformation message) {
     return NotificationData.<T>builder().whoToNotify(data).message(message).build();
   }
 }
