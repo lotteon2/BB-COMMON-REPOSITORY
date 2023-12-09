@@ -19,7 +19,7 @@ jobs:
     - name: trigger single Job
       uses: appleboy/jenkins-action@master
       with:
-        url: "http://34.64.222.98:8080/"
+        url: "http://34.22.106.184:8080/"
         user: "nowgnas"
         token: ${{ secrets.TOKEN }}
         job: "bb-maven"
