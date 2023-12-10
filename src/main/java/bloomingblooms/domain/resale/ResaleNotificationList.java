@@ -15,4 +15,5 @@ public class ResaleNotificationList {
   private List<ResaleNotificationData> resaleNotificationData;
   private String message;
   private String productId;
+  private String productName;
 }
