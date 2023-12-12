@@ -12,6 +12,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class PublishNotificationInformation {
   private NotificationKind notificationKind;
-  private String message;
   private String notificationUrl;
+  private Role role;
+
+  public void setRole(Role role) {
+    this.role = role;
+  }
 }

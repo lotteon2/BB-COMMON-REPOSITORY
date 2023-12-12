@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 public class NotificationData<T> {
   @JsonProperty private T whoToNotify;
   private PublishNotificationInformation publishInformation;
+  private Role role;
 
   public static <T> NotificationData<T> notifyData(
       T data, PublishNotificationInformation publishInformation) {
