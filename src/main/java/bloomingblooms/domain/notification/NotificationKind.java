@@ -12,7 +12,8 @@ public enum NotificationKind {
   SUBSCRIBE("신규 구독 주문이 접수 되었습니다."),
   SETTLEMENT("지난달 정산이 완료 되었습니다."),
   LOWSTOCK("재고가 부족한 꽃이 존재합니다."),
-  NEWCOMER("신규 회원 인증이 요청되었습니다.");
+  NEWCOMER("신규 회원 인증이 요청되었습니다."),
+  ORDERCANCEL("취소된 주문이 존재합니다.");
   private final String message;
 
   NotificationKind(String kind) {
