@@ -15,7 +15,12 @@ public class PublishNotificationInformation {
   private String notificationUrl;
   private Role role;
 
-  public void setRole(Role role) {
-    this.role = role;
+  public static PublishNotificationInformation updateRole(
+      PublishNotificationInformation publishData, Role role) {
+    return PublishNotificationInformation.builder()
+        .notificationKind(publishData.getNotificationKind())
+        .notificationUrl(publishData.notificationUrl)
+        .role(role)
+        .build();
   }
 }
