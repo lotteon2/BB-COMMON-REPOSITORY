@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class ModifyOrderStateCommand {
+public class SendCardMessageNotificationCommand {
     private Long cardId;
     private String password;
     private String senderName;
