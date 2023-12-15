@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class ModifyOrderStateCommand {
+public class ModifyOrderProductStateCommand {
     private Long orderProductId;
     private String type;
 
