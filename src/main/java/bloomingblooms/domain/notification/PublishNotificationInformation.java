@@ -23,4 +23,11 @@ public class PublishNotificationInformation {
         .role(role)
         .build();
   }
+
+  public static PublishNotificationInformation getData(NotificationURL url, NotificationKind kind) {
+    return PublishNotificationInformation.builder()
+        .notificationKind(kind)
+        .notificationUrl(url.getUrl())
+        .build();
+  }
 }
