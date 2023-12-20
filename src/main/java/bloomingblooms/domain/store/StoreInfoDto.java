@@ -10,6 +10,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class StoreInfoDto {
+    private Long storeId;
+    private String storeCode;
     private String storeName;
-    private String storeAddress;
+    private String detailInfo;
+    private String storeThumbnailInfo;
+    private Double averageRating;
+    private String phoneNumber;
+    private String accountNumber;
+    private String bank;
 }
