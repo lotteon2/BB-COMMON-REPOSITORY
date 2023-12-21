@@ -1,6 +1,5 @@
 package bloomingblooms.domain.product;
 
-import kr.bb.product.domain.product.entity.Product;
 import lombok.Builder;
 import lombok.Getter;
 
@@ -12,12 +11,4 @@ public class SubscriptionProductInformation {
   private Long unitPrice;
   private Long storeId;
 
-  public static SubscriptionProductInformation getData(Product product) {
-    return SubscriptionProductInformation.builder()
-        .productName(product.getProductName())
-        .productThumbnail(product.getProductThumbnail())
-        .unitPrice(product.getProductPrice())
-        .storeId(product.getStoreId())
-        .build();
-  }
 }
