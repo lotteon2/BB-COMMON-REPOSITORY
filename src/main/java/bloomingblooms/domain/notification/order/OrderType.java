@@ -1,4 +1,4 @@
-package bloomingblooms.domain.notification.neworder;
+package bloomingblooms.domain.notification.order;
 
 import lombok.Getter;
 
