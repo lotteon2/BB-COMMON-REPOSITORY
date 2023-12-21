@@ -1,4 +1,4 @@
-package bloomingblooms.domain.flower;
+package bloomingblooms.domain.likes;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -6,11 +6,10 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Builder
 @Getter
+@Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-public class FlowerInformation {
-  private Long flowerId;
-  private String flowerName;
+public class ProductDetailLike {
+  private Boolean isLiked;
 }
