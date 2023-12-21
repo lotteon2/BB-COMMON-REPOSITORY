@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 public class ValidatePriceDto {
   private Long couponId;
   private Long couponAmount;
+  private Long storeId;
   private Long deliveryCost;
   private Long actualAmount;
 }
