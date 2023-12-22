@@ -1,4 +1,4 @@
-package bloomingblooms.domain.likes;
+package bloomingblooms.domain.wishlist.likes;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

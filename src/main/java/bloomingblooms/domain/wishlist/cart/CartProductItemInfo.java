@@ -1,5 +1,6 @@
-package bloomingblooms.domain.likes;
+package bloomingblooms.domain.wishlist.cart;
 
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,10 +8,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class LikedStoreInfoResponse {
+public class CartProductItemInfo {
 
   private Long storeId;
   private String storeName;
-  private String detailInfo;
-  private Float averageRating;
+  private int deliveryMinCost;
+  private List<ProductInfoDto> productInfoList;
+
 }
+
