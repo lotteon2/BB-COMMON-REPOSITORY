@@ -1,10 +1,11 @@
-package bloomingblooms.domain.likes;
+package bloomingblooms.domain.wishlist.likes;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
