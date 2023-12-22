@@ -34,3 +34,5 @@ n
 >src/main/java/bloomingblooms/domain/flower/StockChangeDto.java,d/b/db14c7e37289e85153b05fd6609773ad3178db99
 u
 Esrc/main/java/bloomingblooms/domain/store/StoreNameAndAddressDto.java,7/c/7c3dc5665402776c28282eef6689b971c1587fda
+k
+;src/main/java/bloomingblooms/domain/store/StoreInfoDto.java,0/d/0d238d0f1cc97d9f2bd3a2f249dad90a1e2aa56d
