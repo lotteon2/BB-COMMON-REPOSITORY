@@ -14,7 +14,8 @@ public class CartProductItemInfo {
 
   private Long storeId;
   private String storeName;
-  private int deliveryMinCost;
+  private int deliveryCost;
+  private int freeDeliveryMinCost;
   private List<ProductInfoDto> productInfoList;
 
 }
