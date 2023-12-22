@@ -30,4 +30,8 @@ public class PickupCreateDto {
     private String reservationStatus;
     private String reviewStatus;
     private String cardStatus;
+    private String productThumbnail;
+    private String productName;
+    private Long unitPrice;
+
 }

@@ -36,5 +36,8 @@ public class SubscriptionCreateDto {
     private Long actualPrice;
     private String reviewStatus;
     private String deliveryRequest;
+    private String productThumbnail;
+    private String productName;
+    private Long unitPrice;
 
 }
