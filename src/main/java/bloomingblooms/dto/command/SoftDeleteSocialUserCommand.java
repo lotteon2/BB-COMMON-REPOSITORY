@@ -7,6 +7,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class SoftDeleteSocialUseCommand {
+public class SoftDeleteSocialUserCommand {
   private Long socialId;
 }
