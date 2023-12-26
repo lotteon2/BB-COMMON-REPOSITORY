@@ -1,5 +1,7 @@
 package bloomingblooms.domain.order;
 
+import bloomingblooms.domain.notification.NotificationKind;
+import bloomingblooms.domain.notification.NotificationURL;
 import bloomingblooms.domain.notification.order.OrderType;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -37,7 +39,31 @@ public class NewOrderEvent {
     private String productName;
     private Long storeId;
     private OrderType orderType;
-    private List<NewOrderEvent.ProductCount> products;
+    private List<ProductCount> products;
+
+    public static NotificationURL getNotificationURL(OrderType orderType) {
+      switch (orderType) {
+        case PICKUP:
+          return NotificationURL.ORDER_DELIVERY;
+        case DELIVERY:
+          return NotificationURL.DELIVERY;
+        case SUBSCRIBE:
+          return NotificationURL.ORDER_SCHEDULE;
+      }
+      return null;
+    }
+
+    public static NotificationKind getNotificationKind(OrderType orderType) {
+      switch (orderType) {
+        case DELIVERY:
+          return NotificationKind.SHOPPINGMALL;
+        case SUBSCRIBE:
+          return NotificationKind.SUBSCRIBE;
+        case PICKUP:
+          return NotificationKind.PICKUP;
+      }
+      return null;
+    }
   }
 
   @Getter
