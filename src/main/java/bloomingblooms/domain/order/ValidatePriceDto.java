@@ -15,4 +15,13 @@ public class ValidatePriceDto {
   private Long storeId;
   private Long deliveryCost;
   private Long actualAmount;
+
+  public static ValidatePriceDto toDto(OrderInfoByStore orderInfoByStore) {
+    return ValidatePriceDto.builder()
+        .couponId(orderInfoByStore.getCouponId())
+        .couponAmount(orderInfoByStore.getCouponAmount())
+        .deliveryCost(orderInfoByStore.getDeliveryCost())
+        .actualAmount(orderInfoByStore.getActualAmount())
+        .build();
+  }
 }

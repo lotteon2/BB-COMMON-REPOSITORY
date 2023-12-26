@@ -8,4 +8,8 @@ import lombok.Getter;
 public class IsProductPriceValid {
   private String productId;
   private Long price;
+
+  public static IsProductPriceValid toDto(String productId, Long price) {
+    return IsProductPriceValid.builder().productId(productId).price(price).build();
+  }
 }

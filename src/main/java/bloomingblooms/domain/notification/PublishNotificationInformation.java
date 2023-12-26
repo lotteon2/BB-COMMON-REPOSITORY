@@ -16,6 +16,28 @@ public class PublishNotificationInformation {
   private String content;
   private Role role;
 
+  public static PublishNotificationInformation makePublishNotificationInformation(
+      NotificationURL notificationURL, NotificationKind notificationKind, Role role) {
+    return PublishNotificationInformation.builder()
+        .notificationUrl(notificationURL.getUrl())
+        .notificationKind(notificationKind)
+        .role(role)
+        .build();
+  }
+
+  public static PublishNotificationInformation makePublishNotificationInformation(
+      NotificationURL notificationURL,
+      NotificationKind notificationKind,
+      Role role,
+      String content) {
+    return PublishNotificationInformation.builder()
+        .notificationUrl(notificationURL.getUrl())
+        .notificationKind(notificationKind)
+        .role(role)
+        .content(content)
+        .build();
+  }
+
   public static PublishNotificationInformation updateRole(
       PublishNotificationInformation publishData, Role role) {
     return PublishNotificationInformation.builder()
