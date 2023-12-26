@@ -15,7 +15,11 @@ public enum NotificationKind {
   LOWSTOCK("재고가 부족한 꽃이 존재합니다."),
   NEWCOMER("신규 회원 인증이 요청되었습니다."),
   ORDERCANCEL("취소된 주문이 존재합니다."),
-  OUTOFSTOCK("재고가 부족한 꽃이 존재합니다.");
+  OUTOFSTOCK("재고가 부족한 꽃이 존재합니다."),
+  COUPON_EXPIRED("주문실패! 쿠폰이 만료되었습니다"),
+  STOCK_OUT("주문실패! 상품이 품절되었습니다"),
+  ORDER_SUCCESS("주문이 완료되었습니다");
+
   private final String message;
 
   NotificationKind(String kind) {
