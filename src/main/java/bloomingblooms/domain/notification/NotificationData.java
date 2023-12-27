@@ -21,4 +21,9 @@ public class NotificationData<T> {
         .publishInformation(publishInformation)
         .build();
   }
+
+  public static <T> NotificationData<T> notifyData(
+      PublishNotificationInformation publishInformation) {
+    return NotificationData.<T>builder().publishInformation(publishInformation).build();
+  }
 }
