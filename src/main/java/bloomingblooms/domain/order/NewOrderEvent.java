@@ -35,7 +35,7 @@ public class NewOrderEvent {
   @NoArgsConstructor(access = AccessLevel.PROTECTED)
   @AllArgsConstructor
   public static class NewOrderEventItem {
-    private Long orderId;
+    private String orderId;
     private String productName;
     private Long storeId;
     private OrderType orderType;
