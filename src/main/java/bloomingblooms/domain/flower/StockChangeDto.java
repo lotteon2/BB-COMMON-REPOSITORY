@@ -1,12 +1,11 @@
 package bloomingblooms.domain.flower;
 
+import java.util.List;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-import java.util.List;
 
 @Getter
 @Builder
@@ -15,4 +14,5 @@ import java.util.List;
 public class StockChangeDto {
     private Long storeId;
     private List<StockDto> stockDtos;
+    private String phoneNumber;
 }
