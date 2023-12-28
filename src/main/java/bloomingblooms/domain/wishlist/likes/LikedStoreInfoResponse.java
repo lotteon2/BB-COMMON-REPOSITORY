@@ -13,6 +13,7 @@ public class LikedStoreInfoResponse {
 
   private Long storeId;
   private String storeName;
+  private String storeThumbnail;
   private String detailInfo;
   private Float averageRating;
 }
