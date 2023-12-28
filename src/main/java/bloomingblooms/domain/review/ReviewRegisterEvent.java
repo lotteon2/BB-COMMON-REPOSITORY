@@ -14,4 +14,5 @@ public class ReviewRegisterEvent {
     private String productId;
     private Double reviewRating;
     private ReviewType reviewType;
+    private String id;
 }
