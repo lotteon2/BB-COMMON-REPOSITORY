@@ -17,6 +17,7 @@ public enum NotificationKind {
 
   OUT_OF_STOCK("재고가 부족한 꽃이 존재합니다."),
   INVALID_COUPON("주문실패! 쿠폰이 만료되었습니다"),
+  ORDER_FAIL("주문실패! 주문 처리중 문제가 발생하였습니다"),
   ORDER_SUCCESS("주문이 완료되었습니다");
 
   private final String message;

@@ -14,7 +14,9 @@ public enum NotificationURL {
   NEWCOMER("/"),
   SETTLEMENT("/settlement"),
   DELIVERY("/mypage"),
-  OUT_OF_STOCK("/stock"),
+
+  OUT_OF_STOCK(""),
+  INVALID_COUPON(""),
   ORDER_FAIL(""),
   ORDER_SUCCESS("/mypage");
   private final String url;
