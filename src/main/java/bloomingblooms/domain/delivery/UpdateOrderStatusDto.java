@@ -1,5 +1,6 @@
 package bloomingblooms.domain.delivery;
 
+import bloomingblooms.domain.notification.delivery.DeliveryStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -11,5 +12,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UpdateOrderStatusDto {
   private String orderDeliveryId;
-  private String status;
+  private String phoneNumber;
+  private DeliveryStatus deliveryStatus;
 }
