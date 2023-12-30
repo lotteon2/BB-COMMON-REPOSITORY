@@ -17,10 +17,10 @@ public class KakaopayReadyRequestDto {
   private String orderId;
   private String orderType;
   private String itemName;
-  private int quantity;
-  private int totalAmount;
-  private int taxFreeAMount;
-  private boolean isSubscriptionPay;
+  private Integer quantity;
+  private Integer totalAmount;
+  private Integer taxFreeAMount;
+  private Boolean isSubscriptionPay;
 
   public static KakaopayReadyRequestDto toDto(
       Long userId,
