@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.UUID;
 
 public class PresignedUrlService {
-  public PresignedUrlData getPresignedUrl(
+  public static PresignedUrlData getPresignedUrl(
       String prefix, String fileName, AmazonS3 amazonS3, String bucket) {
     String onlyOneFileName = onlyOneFileName(fileName);
 
@@ -20,7 +20,7 @@ public class PresignedUrlService {
         .build();
   }
 
-  private GeneratePresignedUrlRequest getGeneratePreSignedUrlRequest(
+  private static GeneratePresignedUrlRequest getGeneratePreSignedUrlRequest(
       String bucket, String fileName) {
     GeneratePresignedUrlRequest generatePresignedUrlRequest =
         new GeneratePresignedUrlRequest(bucket, fileName)
@@ -31,7 +31,7 @@ public class PresignedUrlService {
     return generatePresignedUrlRequest;
   }
 
-  private Date getPreSignedUrlExpiration() {
+  private static Date getPreSignedUrlExpiration() {
     Date expiration = new Date();
     long expTimeMillis = expiration.getTime();
     expTimeMillis += 1000 * 60 * 5;
@@ -39,7 +39,7 @@ public class PresignedUrlService {
     return expiration;
   }
 
-  private String onlyOneFileName(String fileName) {
+  private static String onlyOneFileName(String fileName) {
     return UUID.randomUUID().toString() + fileName;
   }
 }
