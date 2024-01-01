@@ -21,5 +21,6 @@ public class KakaopayApproveRequestDto {
   private String cid;
   private String tid;
   private String pgToken;
-  private Long deliveryId;  // nullable
+  private Long deliveryId; // nullable
+  private String phoneNumber;
 }
