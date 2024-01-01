@@ -9,12 +9,15 @@ import java.util.Date;
 import java.util.UUID;
 
 public class PresignedUrlService {
-  public String getPresignedUrl(String prefix, String fileName, AmazonS3 amazonS3, String bucket) {
+  public PresignedUrlData getPresignedUrl(
+      String prefix, String fileName, AmazonS3 amazonS3, String bucket) {
     String onlyOneFileName = onlyOneFileName(fileName);
 
     GeneratePresignedUrlRequest generatePresignedUrlRequest =
         getGeneratePreSignedUrlRequest(bucket, prefix + "/" + onlyOneFileName);
-    return amazonS3.generatePresignedUrl(generatePresignedUrlRequest).toString();
+    return PresignedUrlData.builder()
+        .presignedUrl(amazonS3.generatePresignedUrl(generatePresignedUrlRequest).toString())
+        .build();
   }
 
   private GeneratePresignedUrlRequest getGeneratePreSignedUrlRequest(
