@@ -14,6 +14,14 @@ public class NotificationData<T> {
   @JsonProperty private T whoToNotify;
   private PublishNotificationInformation publishInformation;
 
+  /**
+   * notification publisher
+   *
+   * @param data 알림 받을 대상
+   * @param publishInformation notification information
+   * @return NotificationData
+   * @param <T> Object or List<Object>
+   */
   public static <T> NotificationData<T> notifyData(
       T data, PublishNotificationInformation publishInformation) {
     return NotificationData.<T>builder()
@@ -22,6 +30,13 @@ public class NotificationData<T> {
         .build();
   }
 
+  /**
+   * notification data Void
+   *
+   * @param publishInformation notification information
+   * @return NotificationData
+   * @param <T> Void
+   */
   public static <T> NotificationData<T> notifyData(
       PublishNotificationInformation publishInformation) {
     return NotificationData.<T>builder().publishInformation(publishInformation).build();

@@ -16,6 +16,14 @@ public class PublishNotificationInformation {
   private String content;
   private Role role;
 
+  /**
+   * create PublishNotificationInformation with url, kind, role
+   *
+   * @param notificationURL redirect url
+   * @param notificationKind notification kind
+   * @param role notification receiver Role
+   * @return PublishNotificationInformation
+   */
   public static PublishNotificationInformation makePublishNotificationInformation(
       NotificationURL notificationURL, NotificationKind notificationKind, Role role) {
     return PublishNotificationInformation.builder()
@@ -25,6 +33,15 @@ public class PublishNotificationInformation {
         .build();
   }
 
+  /**
+   * create PublishNotificationInformation with url, kind, role, content
+   *
+   * @param notificationURL notification url
+   * @param notificationKind notification kind
+   * @param role notification receiver Role
+   * @param content notification content
+   * @return PublishNotificationInformation
+   */
   public static PublishNotificationInformation makePublishNotificationInformation(
       NotificationURL notificationURL,
       NotificationKind notificationKind,
@@ -38,6 +55,13 @@ public class PublishNotificationInformation {
         .build();
   }
 
+  /**
+   * update PublishNotificationInformation with role
+   *
+   * @param publishData PublishNotificationInformation
+   * @param role notification receiver Role
+   * @return PublishNotificationInformation
+   */
   public static PublishNotificationInformation updateRole(
       PublishNotificationInformation publishData, Role role) {
     return PublishNotificationInformation.builder()
@@ -48,6 +72,14 @@ public class PublishNotificationInformation {
         .build();
   }
 
+  /**
+   * create PublishNotificationInformation with url, kind, content
+   *
+   * @param url notification url
+   * @param kind notification kind
+   * @param content notification content
+   * @return
+   */
   public static PublishNotificationInformation getData(
       NotificationURL url, NotificationKind kind, String content) {
     return PublishNotificationInformation.builder()
@@ -57,6 +89,13 @@ public class PublishNotificationInformation {
         .build();
   }
 
+  /**
+   * create PublishNotificationInformation with url, kind
+   *
+   * @param url notification url
+   * @param kind notification kind
+   * @return PublishNotificationInformation
+   */
   public static PublishNotificationInformation getData(NotificationURL url, NotificationKind kind) {
     return PublishNotificationInformation.builder()
         .notificationKind(kind)
