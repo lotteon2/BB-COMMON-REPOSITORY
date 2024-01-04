@@ -18,6 +18,7 @@ public class ValidatePriceDto {
 
   public static ValidatePriceDto toDto(OrderInfoByStore orderInfoByStore) {
     return ValidatePriceDto.builder()
+        .storeId(orderInfoByStore.getStoreId())
         .couponId(orderInfoByStore.getCouponId())
         .couponAmount(orderInfoByStore.getCouponAmount())
         .deliveryCost(orderInfoByStore.getDeliveryCost())
