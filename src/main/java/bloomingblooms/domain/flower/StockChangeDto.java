@@ -15,4 +15,5 @@ public class StockChangeDto {
     private Long storeId;
     private List<StockDto> stockDtos;
     private String phoneNumber;
+    private Long userId;
 }
