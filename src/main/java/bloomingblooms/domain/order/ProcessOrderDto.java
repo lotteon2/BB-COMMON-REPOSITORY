@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 public class ProcessOrderDto {
   private String orderId;
   private String orderType;
+  private String orderMethod;
   private List<Long> couponIds;
   private Map<String, Long> products; // productId: quantity
   private Long userId;
