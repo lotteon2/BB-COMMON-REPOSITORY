@@ -1,6 +1,7 @@
 package bloomingblooms.domain.notification;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.UUID;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -13,6 +14,7 @@ import lombok.NoArgsConstructor;
 public class NotificationData<T> {
   @JsonProperty private T whoToNotify;
   private PublishNotificationInformation publishInformation;
+  @Builder.Default private String eventId = UUID.randomUUID().toString();
 
   /**
    * notification publisher
