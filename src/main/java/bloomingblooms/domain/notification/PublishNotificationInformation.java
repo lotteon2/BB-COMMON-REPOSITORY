@@ -1,5 +1,6 @@
 package bloomingblooms.domain.notification;
 
+import java.util.UUID;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,6 +16,7 @@ public class PublishNotificationInformation {
   private String notificationUrl;
   private String content;
   private Role role;
+  @Builder.Default private String eventId = UUID.randomUUID().toString();
 
   /**
    * create PublishNotificationInformation with url, kind, role
@@ -25,10 +27,14 @@ public class PublishNotificationInformation {
    * @return PublishNotificationInformation
    */
   public static PublishNotificationInformation makePublishNotificationInformation(
-      NotificationURL notificationURL, NotificationKind notificationKind, Role role) {
+      NotificationURL notificationURL,
+      NotificationKind notificationKind,
+      Role role,
+      String eventId) {
     return PublishNotificationInformation.builder()
         .notificationUrl(notificationURL.getUrl())
         .notificationKind(notificationKind)
+        .eventId(eventId)
         .role(role)
         .build();
   }
@@ -46,11 +52,13 @@ public class PublishNotificationInformation {
       NotificationURL notificationURL,
       NotificationKind notificationKind,
       Role role,
-      String content) {
+      String content,
+      String eventId) {
     return PublishNotificationInformation.builder()
         .notificationUrl(notificationURL.getUrl())
         .notificationKind(notificationKind)
         .role(role)
+        .eventId(eventId)
         .content(content)
         .build();
   }
@@ -67,6 +75,7 @@ public class PublishNotificationInformation {
     return PublishNotificationInformation.builder()
         .notificationKind(publishData.getNotificationKind())
         .notificationUrl(publishData.notificationUrl)
+        .eventId(publishData.getEventId())
         .content(publishData.getContent())
         .role(role)
         .build();
