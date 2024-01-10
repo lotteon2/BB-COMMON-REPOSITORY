@@ -29,12 +29,10 @@ public class PublishNotificationInformation {
   public static PublishNotificationInformation makePublishNotificationInformation(
       NotificationURL notificationURL,
       NotificationKind notificationKind,
-      Role role,
-      String eventId) {
+      Role role) {
     return PublishNotificationInformation.builder()
         .notificationUrl(notificationURL.getUrl())
         .notificationKind(notificationKind)
-        .eventId(eventId)
         .role(role)
         .build();
   }
@@ -76,6 +74,17 @@ public class PublishNotificationInformation {
         .notificationKind(publishData.getNotificationKind())
         .notificationUrl(publishData.notificationUrl)
         .eventId(publishData.getEventId())
+        .content(publishData.getContent())
+        .role(role)
+        .build();
+  }
+
+  public static PublishNotificationInformation updateRole(
+      PublishNotificationInformation publishData, Role role, String eventId) {
+    return PublishNotificationInformation.builder()
+        .notificationKind(publishData.getNotificationKind())
+        .notificationUrl(publishData.notificationUrl)
+        .eventId(eventId)
         .content(publishData.getContent())
         .role(role)
         .build();
