@@ -44,9 +44,9 @@ public class NewOrderEvent {
     public static NotificationURL getNotificationURL(OrderType orderType) {
       switch (orderType) {
         case PICKUP:
-          return NotificationURL.ORDER_DELIVERY;
+          return NotificationURL.ORDER_SCHEDULE;
         case DELIVERY:
-          return NotificationURL.DELIVERY;
+          return NotificationURL.ORDER_DELIVERY;
         case SUBSCRIBE:
           return NotificationURL.ORDER_SCHEDULE;
       }
