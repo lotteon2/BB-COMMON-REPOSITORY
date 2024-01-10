@@ -22,7 +22,7 @@ public class ValidatePriceDto {
         .couponId(orderInfoByStore.getCouponId())
         .couponAmount(orderInfoByStore.getCouponAmount())
         .deliveryCost(orderInfoByStore.getDeliveryCost())
-        .actualAmount(orderInfoByStore.getActualAmount())
+        .actualAmount(orderInfoByStore.getTotalAmount())
         .build();
   }
 }
