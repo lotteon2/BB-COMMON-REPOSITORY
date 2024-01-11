@@ -30,9 +30,11 @@ i
 9src/main/java/bloomingblooms/domain/flower/FlowerDto.java,a/5/a521d77a448bad6b609743f87f2cb5f134efd9ce
 q
 Asrc/main/java/bloomingblooms/domain/flower/FlowerInformation.java,8/2/821f9741bdc82e915024041097ef54b2e1314133
-n
->src/main/java/bloomingblooms/domain/flower/StockChangeDto.java,d/b/db14c7e37289e85153b05fd6609773ad3178db99
 u
 Esrc/main/java/bloomingblooms/domain/store/StoreNameAndAddressDto.java,7/c/7c3dc5665402776c28282eef6689b971c1587fda
 k
 ;src/main/java/bloomingblooms/domain/store/StoreInfoDto.java,0/d/0d238d0f1cc97d9f2bd3a2f249dad90a1e2aa56d
+h
+8src/main/java/bloomingblooms/domain/store/StoreName.java,a/b/ab8642f91705763c99207e3c02ee5ce28299c947
+€
+Psrc/main/java/bloomingblooms/domain/wishlist/likes/LikedProductInfoResponse.java,d/6/d6ede43a06db8a0d1f978a6f43315d14e689baff
