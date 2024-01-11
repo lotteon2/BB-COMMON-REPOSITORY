@@ -10,6 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DeliveryInfoDto {
+  private Long deliveryId;
+  private String deliveryTrackingNumber;
   private String ordererName;
   private String ordererPhone;
   private String ordererEmail;
