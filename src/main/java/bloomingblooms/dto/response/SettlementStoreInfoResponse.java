@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @Builder
 public class SettlementStoreInfoResponse {
-
+  private Long storeId;
   private String storeName;
   private String bankName;
   private String accountNumber;
