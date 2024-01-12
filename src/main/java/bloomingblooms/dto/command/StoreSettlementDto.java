@@ -1,6 +1,6 @@
 package bloomingblooms.dto.command;
 
-import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,6 +10,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Getter
 @Builder
-public class UpdateSettlementCommand {
-  List<StoreSettlementDto> dtoList;
+public class StoreSettlementDto {
+
+  private Long storeId;
+  private Long settlementAmount;
+
 }
