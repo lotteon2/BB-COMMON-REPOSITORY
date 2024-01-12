@@ -10,6 +10,7 @@ public enum NotificationURL {
   ORDER_DELIVERY("/order"),
   ORDER_SCHEDULE("/schedule"),
   ORDER_CANCEL_DELIVERY("/order"),
+
   ORDER_CANCEL_SCHEDULE("/schedule"),
   NEWCOMER("/"),
   SETTLEMENT("/settlement"),
