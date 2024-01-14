@@ -10,10 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SubscriptionBatchDto {
-  private String cid;
-  private String sid;
-  private String partnerOrderId;
-  private String partnerUserId;
-  private Long quantity;
-  private Long totalAmount;
+  private String orderSubscriptionId;
+  private Long userId;
 }
