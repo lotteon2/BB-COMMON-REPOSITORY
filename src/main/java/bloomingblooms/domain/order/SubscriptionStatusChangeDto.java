@@ -1,6 +1,5 @@
 package bloomingblooms.domain.order;
 
-import bloomingblooms.domain.card.CardStatus;
 import bloomingblooms.domain.review.ReviewStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
