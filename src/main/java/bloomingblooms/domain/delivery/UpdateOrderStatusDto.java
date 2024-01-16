@@ -12,8 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UpdateOrderStatusDto {
-  private String orderId;  // orderDeliveryId, orderSubscriptionId
-  private OrderType orderType;
+  private String orderDeliveryId;
   private String phoneNumber;
   private DeliveryStatus deliveryStatus;
 }
