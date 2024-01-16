@@ -33,5 +33,6 @@ public class PickupCreateDto {
     private String productThumbnail;
     private String productName;
     private Long unitPrice;
+    private Long orderProductId;
 
 }
