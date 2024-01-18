@@ -18,7 +18,8 @@ public enum NotificationKind {
   OUT_OF_STOCK("주문 실패: 재고 부족"),
   INVALID_COUPON("주문 실패: 쿠폰 만료"),
   ORDER_FAIL("주문 처리중 문제가 발생 했습니다."),
-  ORDER_SUCCESS("주문이 완료 되었습니다.");
+  ORDER_SUCCESS("주문이 완료 되었습니다."),
+  ORDER("");
 
   private final String message;
 
