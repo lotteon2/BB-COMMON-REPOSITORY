@@ -19,7 +19,9 @@ public enum NotificationURL {
   OUT_OF_STOCK(""),
   INVALID_COUPON(""),
   ORDER_FAIL(""),
-  ORDER_SUCCESS("/mypage");
+  ORDER_SUCCESS("/mypage"),
+
+  LOW_STOCK("/stock");
   private final String url;
 
   NotificationURL(String url) {
