@@ -3,6 +3,7 @@ package bloomingblooms.domain.payment;
 import bloomingblooms.domain.order.OrderInfoByStore;
 import bloomingblooms.domain.order.ProductCreate;
 import java.util.List;
+import java.util.stream.Collectors;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -45,7 +46,10 @@ public class KakaopayReadyRequestDto {
   }
 
   static String getItemName(List<OrderInfoByStore> orderInfoByStores) {
-    int orderCnt = orderInfoByStores.size();
+    int orderCnt = orderInfoByStores.stream().filter(orderInfoByStore -> orderInfoByStore.getProducts() != null)
+            .mapToInt(orderInfoByStore -> orderInfoByStore.getProducts().size())
+            .sum();
+
     if (orderCnt > 1) {
       return orderInfoByStores.get(0).getProducts().get(0).getProductName()
           + " 외 "
