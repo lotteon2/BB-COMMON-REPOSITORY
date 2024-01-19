@@ -15,10 +15,11 @@ public enum NotificationKind {
   NEWCOMER("신규 회원 인증이 요청되었습니다."),
   ORDERCANCEL("취소된 주문이 존재합니다."),
 
-  OUT_OF_STOCK("재고가 부족한 꽃이 존재합니다."),
-  INVALID_COUPON("주문실패! 쿠폰이 만료되었습니다"),
-  ORDER_FAIL("주문실패! 주문 처리중 문제가 발생하였습니다"),
-  ORDER_SUCCESS("주문이 완료되었습니다");
+  OUT_OF_STOCK("주문 실패: 재고 부족"),
+  INVALID_COUPON("주문 실패: 쿠폰 만료"),
+  ORDER_FAIL("주문 처리중 문제가 발생 했습니다."),
+  ORDER_SUCCESS("주문이 완료 되었습니다."),
+  ORDER("");
 
   private final String message;
 

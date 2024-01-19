@@ -1,5 +1,6 @@
-package bloomingblooms.domain.aws;
+package bloomingblooms.domain.store;
 
+import java.util.Map;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-public class PresignedUrlData {
-  private String presignedUrl;
+public class StoreAverageDto {
+
+  Map<Long, Double> average;
 }
