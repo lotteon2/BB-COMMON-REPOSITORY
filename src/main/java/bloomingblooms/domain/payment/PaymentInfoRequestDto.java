@@ -1,6 +1,6 @@
 package bloomingblooms.domain.payment;
 
-import java.util.Map;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class PaymentInfoMapDto {
-    private Map<String, PaymentInfoDto> paymentInfoDtoMap;
+public class PaymentInfoRequestDto {
+  private List<String> orderGroupIds;
 }
