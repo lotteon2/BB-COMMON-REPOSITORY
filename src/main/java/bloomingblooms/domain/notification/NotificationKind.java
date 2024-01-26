@@ -19,7 +19,7 @@ public enum NotificationKind {
   INVALID_COUPON("주문 실패: 쿠폰 만료"),
   ORDER_FAIL("주문 처리중 문제가 발생 했습니다."),
   ORDER_SUCCESS("주문이 완료 되었습니다."),
-  LOW_STOCK("재고가 50개 미만인 꽃이 존재합니다.");
+  LOW_STOCK("재고가 부족합니다.");
 
   private final String message;
 
